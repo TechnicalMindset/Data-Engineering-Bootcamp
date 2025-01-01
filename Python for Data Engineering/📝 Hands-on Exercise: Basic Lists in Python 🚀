@@ -1,0 +1,125 @@
+# 📝 Hands-on Exercise: Basic Lists in Python 🚀
+
+---
+
+## 🎯 **Objective**
+
+In this exercise, you’ll get a **practical introduction to lists** in Python. You'll learn how to create lists, retrieve specific values using **indexing** and **slicing**, and merge lists with **concatenation**. Get ready to have fun while learning! 😄
+
+---
+
+## 1️⃣ **Create a List** 📜
+
+### **Task**
+
+Create a list `a_list` with the following elements:
+
+- `1`
+- `"hello"`
+- `[1, 2, 3]`
+- `True`
+
+### **Steps**
+
+1. Create the list.
+2. Print the list to verify it was created correctly.
+
+```python
+# Create the list
+a_list = [1, "hello", [1, 2, 3], True]
+
+# Print the list
+print(a_list)
+Explanation
+Lists in Python are created using square brackets [], with elements separated by commas. Lists can contain various data types: numbers, strings, other lists, and more! 🌟
+
+2️⃣ Retrieve an Element by Index 🔍
+Task
+Retrieve the value at index 1 from the list a_list.
+
+Steps
+Use indexing to get the value at index 1.
+Print the value.
+python
+Kopiera kod
+# Retrieve the value at index 1
+value_at_index_1 = a_list[1]
+
+# Print the value
+print(value_at_index_1)
+Explanation
+Python uses zero-based indexing: the first element is at index 0, the second at index 1, and so on. Thus, a_list[1] retrieves the value "hello". ✨
+3️⃣ Retrieve Multiple Elements with Slicing 🍰
+Task
+Retrieve elements at indices 1, 2, and 3 from the list a_list using slicing.
+
+Steps
+Use slicing to retrieve the values from index 1 to 3.
+Print the result.
+python
+Kopiera kod
+# Retrieve values from index 1 to 3
+values = a_list[1:4]
+
+# Print the result
+print(values)
+Explanation
+Slicing is used to retrieve a subsection of a list. The syntax is a_list[start:end], where:
+start is the first index to include.
+end is the index to stop at (not included).
+Thus, a_list[1:4] retrieves elements at indices 1 through 3. 🚀
+
+4️⃣ Concatenate (Merge) Lists 🔗
+Task
+Combine two lists A and B into a new list.
+
+Steps
+Create the lists A and B:
+A = [1, 'a']
+B = [2, 1, 'd']
+Merge the lists using the + operator.
+Print the new concatenated list.
+python
+Kopiera kod
+# Create the lists
+A = [1, 'a']
+B = [2, 1, 'd']
+
+# Concatenate the lists
+result = A + B
+
+# Print the result
+print(result)
+Explanation
+Concatenation in Python is done using the plus (+) operator. Using A + B creates a new list containing all elements from both A and B in order. 😎
+5️⃣ Experiment and Reflect 💡
+Task
+Modify elements in the list a_list. Add a new element or change an existing one.
+Print the updated list.
+Attempt to retrieve an element with an invalid index (e.g., a_list[10]) to observe how Python handles errors.
+Example
+python
+Kopiera kod
+# Modify an element in the list
+a_list[0] = 'new value'
+
+# Add a new element
+a_list.append('new element')
+
+# Attempt to retrieve an invalid index
+try:
+    print(a_list[10])
+except IndexError:
+    print("IndexError: The list does not have that many elements.")
+Explanation
+Use a_list[0] = 'new value' to modify an existing element.
+Use a_list.append('new element') to add a new element at the end.
+If you try to retrieve an element from an invalid index, Python raises an IndexError, which can be handled using a try-except block. ⚠️
+📚 Summary 🧠
+🎉 What You’ve Learned:
+
+Creating lists to store diverse data types.
+Indexing to retrieve specific elements.
+Slicing to retrieve multiple elements at once.
+Concatenation to merge lists and create new ones.
+🌟 Challenge: Now that you’ve learned the basics, try creating more advanced lists and experimenting with methods like remove(), insert(), and pop(). Explore lists with different data types like dictionaries, tuples, and sets! 🚀
