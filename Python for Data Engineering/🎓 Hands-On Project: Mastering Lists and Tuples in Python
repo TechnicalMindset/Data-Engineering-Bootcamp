@@ -141,26 +141,28 @@ Code Template:
 # Nested list
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print("Element (row 2, col 3):", matrix[1][2])
--
+
+
+---
+
+
 📝 Task 3.2: Combine Lists and Tuples
 Use zip to combine two lists.
 Convert the combined structure into a list or tuple.
 Code Template:
 
-python
-Kopiera kod
 # Combine lists with zip
 list1 = [1, 2, 3]
 list2 = ['a', 'b', 'c']
 combined = list(zip(list1, list2))
 print("Combined list:", combined)
+
+
 📝 Task 3.3: Efficient Handling of Large Data
 Create a large list using list comprehension.
 Use a generator to create a sequence of numbers without consuming too much memory.
 Code Template:
 
-python
-Kopiera kod
 # Large list
 large_list = [x for x in range(1000000)]
 print("Large list created.")
@@ -168,13 +170,17 @@ print("Large list created.")
 # Generator
 large_generator = (x**2 for x in range(1000000))
 print("Large generator created.")
+
+
+---
+
+
 🚀 Part 4: Comparisons and Optimization
 📝 Task 4.1: Compare Lists and Tuples
 Measure performance differences in creation and iteration between lists and tuples.
 Code Template:
 
-python
-Kopiera kod
+
 import time
 
 # List
