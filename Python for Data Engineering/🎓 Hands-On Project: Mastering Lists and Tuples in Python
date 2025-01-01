@@ -128,8 +128,11 @@ a, b, c = packed
 print("Unpacked values:", a, b, c)
 
 ---
+
+
 🚀 Part 3: Advanced Techniques for Lists and Tuples
 📝 Task 3.1: Nested Structures
+
 Create a nested list (a matrix).
 Access specific elements in the nested list.
 Code Template:
