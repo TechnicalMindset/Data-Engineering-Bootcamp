@@ -1,0 +1,171 @@
+🎓 Hands-On Project: Mastering Lists and Tuples in Python
+This project offers a structured, step-by-step guide to mastering the essential features and techniques for working with lists and tuples in Python. It’s designed to provide hands-on experience and a deep understanding of these data structures.
+
+🎯 Project Goals
+Understand basic and advanced functionalities of lists and tuples.
+Develop skills for handling large datasets efficiently.
+Master techniques for managing lists and tuples effectively.
+Create and work with both simple and nested structures.
+Gain insights into performance differences between lists and tuples.
+🚀 Part 1: Basic List Operations
+📝 Task 1.1: Create and Manipulate Lists
+Create an empty list and print it.
+Create a list with five integers and print it.
+Create a mixed list with at least three different data types and print it.
+Code Template:
+
+python
+Kopiera kod
+# Create lists
+empty_list = []
+print("Empty list:", empty_list)
+
+integer_list = [1, 2, 3, 4, 5]
+print("Integer list:", integer_list)
+
+mixed_list = [42, "Python", 3.14, True]
+print("Mixed list:", mixed_list)
+📝 Task 1.2: Add and Remove Elements
+Add an element to the end of the list using append.
+Add multiple elements using extend.
+Insert an element at a specific position using insert.
+Remove a specific element using remove.
+Remove and return the last element using pop.
+Clear all elements from the list using clear.
+Code Template:
+
+python
+Kopiera kod
+# Add elements
+my_list = [1, 2, 3]
+my_list.append(4)
+print("After append:", my_list)
+
+my_list.extend([5, 6])
+print("After extend:", my_list)
+
+my_list.insert(2, "new")
+print("After insert:", my_list)
+
+# Remove elements
+my_list.remove(3)
+print("After remove:", my_list)
+
+last_element = my_list.pop()
+print("Popped element:", last_element)
+
+my_list.clear()
+print("After clear:", my_list)
+📝 Task 1.3: Indexing and Slicing
+Retrieve a specific element using an index.
+Create a sublist using slicing.
+Use negative indexing to access the last element.
+Code Template:
+
+python
+Kopiera kod
+# Indexing and slicing
+my_list = [10, 20, 30, 40, 50]
+print("Element at index 1:", my_list[1])
+print("Sublist (index 1-3):", my_list[1:4])
+print("Last element:", my_list[-1])
+📝 Task 1.4: Iteration and List Comprehension
+Iterate through a list using a for loop.
+Create a list of squares of the first ten integers using list comprehension.
+Code Template:
+
+python
+Kopiera kod
+# Iteration
+my_list = [1, 2, 3, 4, 5]
+for element in my_list:
+    print("Element:", element)
+
+# List comprehension
+squares = [x**2 for x in range(10)]
+print("Squares:", squares)
+🚀 Part 2: Basic Tuple Operations
+📝 Task 2.1: Create and Manipulate Tuples
+Create an empty tuple.
+Create a tuple with three elements.
+Create a tuple without parentheses (packing).
+Code Template:
+
+python
+Kopiera kod
+# Create tuples
+empty_tuple = ()
+print("Empty tuple:", empty_tuple)
+
+tuple_with_elements = (1, 2, 3)
+print("Tuple with elements:", tuple_with_elements)
+
+packed_tuple = 4, 5, 6
+print("Packed tuple:", packed_tuple)
+📝 Task 2.2: Packing and Unpacking
+Pack a tuple with three elements.
+Unpack a tuple into separate variables.
+Code Template:
+
+python
+Kopiera kod
+# Packing and unpacking tuples
+packed = 10, 20, 30
+a, b, c = packed
+print("Unpacked values:", a, b, c)
+🚀 Part 3: Advanced Techniques for Lists and Tuples
+📝 Task 3.1: Nested Structures
+Create a nested list (a matrix).
+Access specific elements in the nested list.
+Code Template:
+
+python
+Kopiera kod
+# Nested list
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print("Element (row 2, col 3):", matrix[1][2])
+📝 Task 3.2: Combine Lists and Tuples
+Use zip to combine two lists.
+Convert the combined structure into a list or tuple.
+Code Template:
+
+python
+Kopiera kod
+# Combine lists with zip
+list1 = [1, 2, 3]
+list2 = ['a', 'b', 'c']
+combined = list(zip(list1, list2))
+print("Combined list:", combined)
+📝 Task 3.3: Efficient Handling of Large Data
+Create a large list using list comprehension.
+Use a generator to create a sequence of numbers without consuming too much memory.
+Code Template:
+
+python
+Kopiera kod
+# Large list
+large_list = [x for x in range(1000000)]
+print("Large list created.")
+
+# Generator
+large_generator = (x**2 for x in range(1000000))
+print("Large generator created.")
+🚀 Part 4: Comparisons and Optimization
+📝 Task 4.1: Compare Lists and Tuples
+Measure performance differences in creation and iteration between lists and tuples.
+Code Template:
+
+python
+Kopiera kod
+import time
+
+# List
+start = time.time()
+large_list = [x for x in range(1000000)]
+print("List created in:", time.time() - start, "seconds")
+
+# Tuple
+start = time.time()
+large_tuple = tuple(x for x in range(1000000))
+print("Tuple created in:", time.time() - start, "seconds")
+🌟 Challenge: Explore methods like remove(), insert(), pop() for lists and advanced tuple usage. Try creating hybrid data structures with nested lists and tuples for complex data handling! 🚀
