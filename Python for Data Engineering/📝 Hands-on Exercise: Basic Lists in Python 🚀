@@ -9,9 +9,7 @@ In this exercise, you’ll get a **practical introduction to lists** in Python. 
 ---
 
 ## 1️⃣ **Create a List** 📜
-
-### **Task**
-
+Task:
 Create a list `a_list` with the following elements:
 
 - `1`
