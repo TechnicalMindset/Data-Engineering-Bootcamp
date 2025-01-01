@@ -7,15 +7,18 @@ Develop skills for handling large datasets efficiently.
 Master techniques for managing lists and tuples effectively.
 Create and work with both simple and nested structures.
 Gain insights into performance differences between lists and tuples.
+
+---
+
+
 🚀 Part 1: Basic List Operations
 📝 Task 1.1: Create and Manipulate Lists
+
 Create an empty list and print it.
 Create a list with five integers and print it.
 Create a mixed list with at least three different data types and print it.
 Code Template:
 
-python
-Kopiera kod
 # Create lists
 empty_list = []
 print("Empty list:", empty_list)
@@ -25,6 +28,8 @@ print("Integer list:", integer_list)
 
 mixed_list = [42, "Python", 3.14, True]
 print("Mixed list:", mixed_list)
+
+
 📝 Task 1.2: Add and Remove Elements
 Add an element to the end of the list using append.
 Add multiple elements using extend.
@@ -34,8 +39,6 @@ Remove and return the last element using pop.
 Clear all elements from the list using clear.
 Code Template:
 
-python
-Kopiera kod
 # Add elements
 my_list = [1, 2, 3]
 my_list.append(4)
@@ -56,26 +59,30 @@ print("Popped element:", last_element)
 
 my_list.clear()
 print("After clear:", my_list)
+
+---
+
+
 📝 Task 1.3: Indexing and Slicing
 Retrieve a specific element using an index.
 Create a sublist using slicing.
 Use negative indexing to access the last element.
 Code Template:
 
-python
-Kopiera kod
 # Indexing and slicing
 my_list = [10, 20, 30, 40, 50]
 print("Element at index 1:", my_list[1])
 print("Sublist (index 1-3):", my_list[1:4])
 print("Last element:", my_list[-1])
+
+---
+
+
 📝 Task 1.4: Iteration and List Comprehension
 Iterate through a list using a for loop.
 Create a list of squares of the first ten integers using list comprehension.
 Code Template:
 
-python
-Kopiera kod
 # Iteration
 my_list = [1, 2, 3, 4, 5]
 for element in my_list:
@@ -84,15 +91,20 @@ for element in my_list:
 # List comprehension
 squares = [x**2 for x in range(10)]
 print("Squares:", squares)
+
+---
+
+
 🚀 Part 2: Basic Tuple Operations
+
+--
+
 📝 Task 2.1: Create and Manipulate Tuples
 Create an empty tuple.
 Create a tuple with three elements.
 Create a tuple without parentheses (packing).
 Code Template:
 
-python
-Kopiera kod
 # Create tuples
 empty_tuple = ()
 print("Empty tuple:", empty_tuple)
@@ -102,13 +114,14 @@ print("Tuple with elements:", tuple_with_elements)
 
 packed_tuple = 4, 5, 6
 print("Packed tuple:", packed_tuple)
+
+
 📝 Task 2.2: Packing and Unpacking
 Pack a tuple with three elements.
 Unpack a tuple into separate variables.
 Code Template:
 
-python
-Kopiera kod
+
 # Packing and unpacking tuples
 packed = 10, 20, 30
 a, b, c = packed
