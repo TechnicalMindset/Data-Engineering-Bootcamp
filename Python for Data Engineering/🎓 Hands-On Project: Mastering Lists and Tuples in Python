@@ -126,6 +126,8 @@ Code Template:
 packed = 10, 20, 30
 a, b, c = packed
 print("Unpacked values:", a, b, c)
+
+---
 🚀 Part 3: Advanced Techniques for Lists and Tuples
 📝 Task 3.1: Nested Structures
 Create a nested list (a matrix).
