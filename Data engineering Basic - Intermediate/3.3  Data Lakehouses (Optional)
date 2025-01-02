@@ -18,7 +18,7 @@ Data lakes quickly and cost-effectively capture both structured and unstructured
 ### 📉(Challenges)
 Issues with data governance and quality control can lead to data swamps, where data becomes duplicated, incomplete, or outdated.
 
-### ⏱️ Prestanda (Performance)
+### ⏱️(Performance)
 Since data lakes are not optimized for complex queries, performance can become a bottleneck when generating insights.
 
 ---
