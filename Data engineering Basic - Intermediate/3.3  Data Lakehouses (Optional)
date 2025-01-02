@@ -1,0 +1,51 @@
+# Data Lakehouses (Optional) 🖥️💻
+
+## 🍽️ Restauranganalogi (Restaurant Analogy)
+
+### 🧑‍🍳 (Kitchen)
+The data flow in an organization is similar to a commercial kitchen, where raw ingredients (data) come from various sources and need to be processed to become usable.
+
+### 🛻 (Delivery)
+Data comes from different sources (cloud, applications, social media) and is temporarily stored, much like ingredients being delivered to the kitchen.
+
+---
+
+## 🌊 (Data Lakes)
+
+### ⚡ (Flexibility)
+Data lakes quickly and cost-effectively capture both structured and unstructured data in its raw form.
+
+### 📉 Utmaningar (Challenges)
+Issues with data governance and quality control can lead to data swamps, where data becomes duplicated, incomplete, or outdated.
+
+### ⏱️ Prestanda (Performance)
+Since data lakes are not optimized for complex queries, performance can become a bottleneck when generating insights.
+
+---
+
+## 🏢 Datalager (Data Warehouses)
+
+### 💡 Fördelar (Advantages)
+High-performance databases for query management, ideal for Business Intelligence and specific analytics.
+
+### 💸 Nackdelar (Disadvantages)
+High costs and slow handling of semi-structured/unstructured data. They can also be slow when requiring the most up-to-date updates.
+
+---
+
+## 🏠 Data Lakehouse
+
+### 🔑 Kombinerar Fördelar (Combines Benefits)
+A *Data Lakehouse* combines the flexibility and cost-effectiveness of data lakes with the performance and structure of data warehouses.
+
+### 📈 Fördelar (Advantages)
+It stores data from many new sources and enables both Business Intelligence and high-performance machine learning through built-in data management and governance.
+
+### 🔄 Användning (Use Cases)
+It can be used to modernize data lakes, complement data warehouses, or support AI/ML-driven workloads.
+
+---
+
+## 🔄 Sammanfattning (Summary)
+
+Data Lakehouses offer a powerful solution that merges the best of both data lakes and data warehouses, providing flexibility and high performance for analytics and machine learning. 💡
