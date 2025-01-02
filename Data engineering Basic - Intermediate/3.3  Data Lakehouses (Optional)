@@ -10,12 +10,12 @@ Data comes from different sources (cloud, applications, social media) and is tem
 
 ---
 
-## 🌊 (Data Lakes)
+## 🌊(Data Lakes)
 
-### ⚡ (Flexibility)
+### ⚡(Flexibility)
 Data lakes quickly and cost-effectively capture both structured and unstructured data in its raw form.
 
-### 📉 Utmaningar (Challenges)
+### 📉(Challenges)
 Issues with data governance and quality control can lead to data swamps, where data becomes duplicated, incomplete, or outdated.
 
 ### ⏱️ Prestanda (Performance)
