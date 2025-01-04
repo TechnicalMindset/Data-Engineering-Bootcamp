@@ -1,0 +1,67 @@
+# ETL vs ELT: A Comparison
+
+## 🔄 **ETL (Extract, Transform, Load)**
+
+### **🔍 Extract**:
+Data is collected from source systems for transformation, either through **batch processing** (large datasets in scheduled intervals) or **stream processing** (real-time data).
+
+### **🔧 Transform**:
+Raw data is transformed into usable formats for analysis (e.g., date standardization, filtering, and data validation).
+
+### **📤 Load**:
+The processed data is loaded into a data warehouse. The loading process can be:
+1. **Initial**: Loading the first dataset.
+2. **Incremental**: Adding only the changes since the last load.
+3. **Full update**: Replacing all existing data.
+
+### **🔧 ETL Tools**:
+- IBM Infosphere
+- AWS Glue
+- HEVO
+- Informatica PowerCenter
+
+### **⚡ Advantages**:
+- Ideal for batch processing and handling large datasets.
+- Commonly used in traditional data warehouses.
+
+---
+
+## 🌀 **ELT (Extract, Load, Transform)**
+
+### **🔍 Extract**:
+Data is extracted from source systems and loaded directly into the target system, typically a **data lake**.
+
+### **📤 Load**:
+Data is stored quickly in the target system without transformation.
+
+### **🔧 Transform**:
+Transformations are applied after the data has been loaded into the target system.
+
+### **⚡ Advantages**:
+- Faster delivery of raw data to the system.
+- Increased flexibility for analysts and data scientists to perform dynamic analysis on raw data.
+- Better for handling large datasets and unstructured data.
+
+---
+
+## 🚉 **Data Pipelines**
+
+### **📊 Data Pipeline**:
+A broader term describing the entire journey of data from source to destination. It can include both **ETL** and **ELT**.
+
+### **⚡ Advantages**:
+- Supports both **batch processing** and **streaming data** (real-time).
+- Especially useful for data updates that require continuous flow, such as sensor data.
+
+### **🔧 Popular Tools**:
+- Apache Beam
+- AirFlow
+- DataFlow
+
+---
+
+## 🔑 **Summary**:
+
+1. **ETL**: Best suited for structured data and large batches.
+2. **ELT**: Ideal for data lakes and Big Data with real-time processing.
+3. **Data Pipelines**: Cover the entire data journey and can handle both batch and streaming data. 💡
