@@ -1,0 +1,103 @@
+# **Factors for Choosing and Designing Data Storage** 💡
+
+Designing a data warehouse requires careful consideration of several factors, based on both the data to be stored and how it will be used. Below are key concepts and examples:
+
+---
+
+## 1️⃣ **Data Types and Database Choices** ⚙️
+
+- **Relational Databases (RDBMS)** are used for structured data with a well-defined schema, organized in tables.  
+  **Examples**: MySQL, PostgreSQL.
+  
+- **NoSQL Databases** are used for semi-structured or unstructured data. There are four types:
+    - **Key-Value**: Redis
+    - **Document-Based**: MongoDB
+    - **Column-Based**: Cassandra
+    - **Graph-Based**: Neo4j
+  
+**Example**: If you need to store user data where each user can have different fields, a document-based database like MongoDB would be a better choice.
+
+---
+
+## 2️⃣ **Data Volume and Data Store Choices** 🔧
+
+- For **large volumes of raw data** from sources in their original format, a **data lake** is best.  
+  **Example**: Amazon S3.
+  
+- For **Big Data** with high volume and velocity, requiring parallel processing, systems like **Hadoop HDFS** or **Spark** are used.
+
+---
+
+## 3️⃣ **Transactional vs Analytical Systems** ⚙️
+
+- **Transactional Systems** must support fast reading, writing, and updating of data (e.g., **ERP systems**).
+  
+- **Analytical Systems** handle complex queries on large data sets and require faster response times (e.g., **Data Warehouse**).
+
+---
+
+## 4️⃣ **Scalability** 💡
+
+- Scalability refers to the data warehouse’s ability to grow as data, workloads, and users increase.
+  
+- A **data lake** can scale for large amounts of data without predefining a schema, while a **database warehouse** may have a more structured design.
+
+---
+
+## 5️⃣ **Normalization and Design Strategies** ⚙️
+
+- **Normalization** is important for organizing data and improving performance in transactional systems. However, for **analytical systems**, too much normalization can lead to performance issues, making **denormalization** a better choice.
+
+---
+
+## 6️⃣ **Storage and Recovery** 🔧
+
+- **Performance**: Throughput and latency affect how quickly data can be read and written.
+  
+- **Availability**: The storage solution must always be available without downtime.
+  
+- **Integrity**: Ensure data is not corrupted or lost.
+  
+- **Recoverability**: A solution must have a plan to recover data in case of failure or disaster.
+
+---
+
+## 7️⃣ **Privacy, Security, and Governance** 🛡️
+
+- Security is a layered approach that includes **access control**, **encryption**, and **monitoring**.
+  
+- Compliance with **regulations** such as GDPR, CCPA, and HIPAA is essential to manage sensitive data and ensure data privacy and protection.
+
+---
+
+## ✅ **Questions to Master the Topic** 📝
+
+1. **What types of databases exist, and when should each be used?**
+2. **What is the difference between transactional and analytical systems?**
+3. **How do volume and velocity impact the choice of data storage?**
+4. **What is the difference between normalization and denormalization in database design?**
+5. **What factors are critical for ensuring the performance and security of a data warehouse?**
+
+---
+
+## 📝 **Answers to the Questions**
+
+1. **Database Types and Usage**:
+    - **Relational Databases**: Used for structured data with a well-defined schema (e.g., MySQL).
+    - **NoSQL Databases**: Used for semi-structured and unstructured data, for example MongoDB (document), Cassandra (column), Redis (key-value).
+
+2. **Transactional Systems vs Analytical Systems**:
+    - **Transactional Systems** handle large volumes of fast writes and updates (e.g., bank transactions).
+    - **Analytical Systems** apply complex queries to large datasets to gain insights (e.g., business intelligence).
+
+3. **Volume and Velocity**:
+    - **Large data volumes** and **high velocity** require **data lakes** (e.g., Amazon S3) or **Big Data solutions** (e.g., Hadoop, Spark).
+    - **Low to medium volume** and structured data can be stored in **relational databases**.
+
+4. **Normalization vs Denormalization**:
+    - **Normalization** reduces redundancy and improves database efficiency, useful in transactional systems.
+    - **Denormalization** consolidates data into fewer tables for faster analysis, useful for analytical systems.
+
+5. **Performance and Security**:
+    - **Performance**: High throughput and low latency ensure quick access to data.
+    - **Security**: Encryption, access control, and regular backups protect data from loss and intrusion.
