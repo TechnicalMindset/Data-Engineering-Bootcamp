@@ -1,0 +1,84 @@
+# 📚 Summary: Data Wrangling & Transformations
+
+Data wrangling (or **data munging**) is a crucial part of data processing, where raw data is transformed into a format suitable for analysis. It is an iterative process that involves **exploration**, **transformation**, **validation**, and **availability** of data to ensure the analysis is both reliable and meaningful. Here are the key points and processes:
+
+---
+
+## 🔧 Key Concepts in Data Wrangling
+
+1. **Structuring Data** 🔄
+    - **Structuring** refers to changing the format and schema of data to enable merging from different sources (e.g., relational databases and web APIs).
+    - **Example**: If data comes from two different tables, you can **merge** columns or **union** rows to create a unified table.
+
+2. **Normalization and Denormalization** 🧹
+    - **Normalization** aims to reduce redundancy and inconsistency in databases, common in transactional systems.
+    - **Denormalization** involves combining data from multiple tables to speed up queries in reports and analyses.
+    - **Example**: Data from a transactional system is often normalized, while it needs to be denormalized before being used for analysis.
+
+3. **Data Cleaning** 🧼
+    - Cleaning involves addressing issues in the data to allow for correct and reliable analysis.
+    - **Common issues**: Missing values, duplicates, irrelevant data, syntax errors, and outliers.
+    - **Methods**: Use imputation for missing values, clean duplicates, and standardize formats like dates and units.
+
+4. **Data Profiling and Visualization** 📊
+    - **Data profiling** helps understand the data by identifying structural issues and anomalies.
+    - **Example**: Visualizing income in a dataset can help identify outliers (anomalies).
+
+---
+
+## ✅ Questions to Master the Topic
+
+1️⃣ **What is the purpose of data wrangling, and why is it so important?**
+
+2️⃣ **What are the different types of data transformations?**
+
+3️⃣ **What is the difference between merging and unioning data?**
+
+4️⃣ **What do normalization and denormalization of data mean?**
+
+5️⃣ **How can you handle missing values in a dataset?**
+
+6️⃣ **What is data profiling, and how does it help in data wrangling?**
+
+7️⃣ **What are some common problems that may arise during data cleaning?**
+
+---
+
+## 📝 Answers to Strengthen Understanding
+
+1️⃣ **The purpose of data wrangling** is to transform raw data into a format suitable for analysis. This is important because raw data is often incomplete, incorrect, or hard to work with directly. By wrangling data, we ensure that we are working with a **clean** and **structured** dataset that provides meaningful insights. 💡
+
+2️⃣ The most common **data transformations** are:
+   - **Structuring**: Changing the data format to make it compatible with other data sources.
+   - **Normalization**: Reducing redundancy and inconsistencies in data.
+   - **Denormalization**: Combining data from multiple tables to improve query performance.
+   - **Cleaning**: Fixing errors such as missing values, duplicates, or irrelevant data.
+
+3️⃣ **Merging** refers to combining columns from different tables, while **unioning** refers to combining rows. 
+   - **Example**: Merging tables from two different sources creates a new table with all columns from both, while unioning combines entire rows. 🔄
+
+4️⃣ **Normalization** is used to eliminate redundancy and ensure data consistency in databases, while **denormalization** is used to make data more accessible and improve query performance by combining multiple tables into one. ⚙️
+
+5️⃣ **Handling missing values**:
+   - **Filter out records with missing values** if they are irrelevant.
+   - **Imputation**: Calculate missing values based on other data (e.g., mean, median, or mode).
+   - **Example**: Missing age data in a demographic study can be imputed based on other known values. 🧠
+
+6️⃣ **Data profiling** helps inspect the data for anomalies, such as missing values or duplicates. It helps you understand the data’s structure and content before performing transformations or analyses. 📊
+
+7️⃣ **Common problems in data cleaning** include:
+   - Missing values 🛑
+   - Duplicates 📋
+   - Irrelevant data 🚫
+   - Syntax errors (e.g., extra spaces, misspelled text) ✍️
+   - Anomalies (extremely high or low values) ⚠️
+
+---
+
+## ✅ Essential Tools for Data Wrangling
+
+Tools like **OpenRefine**, **Google DataPrep**, and programming libraries like **Pandas** and **NumPy** in Python help streamline the process of cleaning and transforming data into an analysis-friendly format. These tools make it easier to quickly identify and address issues in large datasets. 🛠️
+
+---
+
+By mastering these techniques and tools, you'll be able to ensure that the data you work with is accurate and ready for further analysis! 💡📊
