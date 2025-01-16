@@ -1,0 +1,10 @@
+# Ignore Jupyter Notebook checkpoints
+*.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore cache and virtual environment
+__pycache__/
+.venv/
